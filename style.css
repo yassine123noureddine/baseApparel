@@ -1,0 +1,174 @@
+/* Define the color palette */
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+    --gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+/* Apply the Josefin Sans font */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    /* background: var(--gradient-1); */
+    color: var(--dark-grayish-red);
+    background: var(--gradient-1), var(--gradient-2);
+
+}
+
+/* Use media queries for mobile and desktop */
+@media (max-width: 375px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        font-size: 16px;
+        
+    }
+
+}
+
+/* Buttons */
+button {
+    background-color: var(--soft-red);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--desaturated-red);
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Example for headers with different font weights */
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* clasAll */
+.clasAll{
+    width: 100%;
+    height: 750px;
+    display: flex;
+}
+
+/* articl */
+.articl{
+width: 60%;
+height: 100%;
+/* background-color: blue; */
+}
+.nav{
+display: flex;
+align-items: center;
+gap: 10px;
+
+font-size: larger;
+letter-spacing: 2px;
+font-weight: 700;
+/* background-color: aqua; */
+color: var(--dark-grayish-red);
+  
+width: 60%;
+height: 200PX;
+margin: 0 auto;
+}
+.nav i{
+    color: var(--soft-red);
+}
+
+
+
+
+
+/* hom */
+.hom{
+    /* background-color: red; */
+    width: 60%;
+    height: 200PX;
+    margin: 0 auto;
+}
+.hom h1{
+
+letter-spacing: 3px;
+font-weight: 400;
+}
+.hom h1 .SPAN1{
+    color: var(--soft-red);
+    font-size: 30px;
+    font-weight: 400;
+   
+}
+.hom p{
+    color:  var(--soft-red);
+}
+/* SEARCH INPUT */
+.serachAdrress{
+    /* background-color: greenyellow; */
+    width: 60%;
+    height: 100PX;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 30px;
+}
+.divSearchInput {
+    /* background-color: rebeccapurple; */
+    display: flex;
+    width: 100%;
+    border: 1px var(--desaturated-red) solid;
+    border-radius: 30px;
+ 
+}
+input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 30px;
+    background-color: var(--gradient-1);
+    padding-left: 20px;
+    
+}
+button{
+    width: 60px;
+    height: auto;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+/* box-shadow: offset-x offset-y blur-radius spread-radius color;
+ */
+}
+button:hover{
+    width: 60px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 5px 9px 0 var(--soft-red);
+   transform: scale(1.1);
+}
+/* .serachAdrress [name="search"]{
+    width: 100%; 
+     border: 0;
+    outline: 0;
+} */
+
+/* cllassImag */
+.cllassImag{
+    width: 40%;
+    height: 100;
+    background-color: aqua;
+}
+.cllassImag img{
+    width: 100%;
+    height: 100%;
+}
